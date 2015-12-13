@@ -7,11 +7,9 @@ for file in bash_profile gemrc gitconfig gitmessage railsrc vim vimrc ; do
   target=$HOME/.$file
   if [ -e $target ] ; then
     read -p "This will overwrite $target. Are you sure? (y/n) " -n 1;
-    if [[ $REPLY =~ ^[Yy]$ ]] ; then
-      ln -sfhv ${pwd}/$file $target
-    fi
+    [[ $REPLY =~ ^[Yy]$ ]] && ln -sfv ${pwd}/$file $target
   else
-    ln -sfhv ${pwd}/$file $target
+    ln -sfv ${pwd}/$file $target
   fi
 done
 
