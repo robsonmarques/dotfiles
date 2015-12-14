@@ -14,7 +14,7 @@ for file in bash_profile gemrc gitconfig gitmessage railsrc vim vimrc ; do
 done
 
 echo "Installing bash-git-prompt"
-git clone https://github.com/magicmonty/bash-git-prompt.git $HOME
+git clone https://github.com/magicmonty/bash-git-prompt.git $HOME/bash-git-prompt
 
 source $HOME/.bash_profile
 
