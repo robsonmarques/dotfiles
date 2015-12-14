@@ -16,7 +16,7 @@ done
 echo "Installing bash-git-prompt"
 git clone https://github.com/magicmonty/bash-git-prompt.git $HOME/bash-git-prompt
 
-source $HOME/.bash_profile
+source $HOME/profile
 
 echo "Installing vim plugins"
 vim +PlugInstall +qall
